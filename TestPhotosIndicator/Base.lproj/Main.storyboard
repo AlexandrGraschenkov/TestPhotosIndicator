@@ -40,11 +40,17 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Xaa-lZ-dXM"/>
                                 </connections>
                             </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" id="Hgb-xU-G1W">
+                                <rect key="frame" x="121" y="197" width="132" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.27066271549999998" blue="0.28623383619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="scroll" destination="3nK-qe-enG" id="xVP-j3-fMo"/>
+                        <outlet property="standartPager" destination="Hgb-xU-G1W" id="poe-Nu-Dmt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

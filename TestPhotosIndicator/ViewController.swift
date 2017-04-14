@@ -28,6 +28,7 @@ public extension UIColor {
 class ViewController: UIViewController {
 
     @IBOutlet weak var scroll: UIScrollView!
+    @IBOutlet weak var standartPager: UIPageControl!
     var indicator: PhotosIndicator!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,7 @@ class ViewController: UIViewController {
         
         indicator = PhotosIndicator(frame: CGRect(x: 100, y: 300, width: 130, height: 30))
         indicator.count = 5
+        standartPager.numberOfPages = 5
         indicator.backgroundColor = UIColor.yellow
         view.addSubview(indicator)
     }
@@ -48,5 +50,6 @@ extension ViewController: UIScrollViewDelegate {
         let count = CGFloat(indicator.count)
         let val = scrollView.contentOffset.x / (scrollView.contentSize.width - scrollView.bounds.width)
         indicator.position = val * (count)
+        standartPager.currentPage = Int(round(indicator.position))
     }
 }
