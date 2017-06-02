@@ -30,26 +30,33 @@ class ViewController: UIViewController {
     @IBOutlet weak var scroll: UIScrollView!
     @IBOutlet weak var standartPager: UIPageControl!
     var indicator: PhotosIndicator!
+    var indicator2: SLMPager!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        scroll.contentSize = CGSize(width: 1000, height: 10)
+        scroll.contentSize = CGSize(width: 2000, height: 10)
         scroll.backgroundColor = UIColor.lightGray
         
-        indicator = PhotosIndicator(frame: CGRect(x: 100, y: 300, width: 130, height: 30))
-        indicator.count = 5
-        standartPager.numberOfPages = 5
+        indicator = PhotosIndicator(frame: CGRect(x: 100, y: 240, width: 130, height: 30))
+        indicator.count = 9
+        standartPager.numberOfPages = 9
         indicator.backgroundColor = UIColor.yellow
         view.addSubview(indicator)
+        
+        indicator2 = SLMPager(frame: CGRect(x: 100, y: 280, width: 130, height: 30))
+        indicator2.count = 9
+        indicator2.backgroundColor = UIColor(red: 0.6, green: 0.7, blue: 1, alpha: 1)
+        view.addSubview(indicator2)
     }
 
 }
 
 extension ViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let count = CGFloat(indicator.count)
+        let count = CGFloat(indicator.count - 1)
         let val = scrollView.contentOffset.x / (scrollView.contentSize.width - scrollView.bounds.width)
         indicator.position = val * (count)
+        indicator2.position = val * (count)
         standartPager.currentPage = Int(round(indicator.position))
     }
 }

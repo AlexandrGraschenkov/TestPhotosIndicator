@@ -8,7 +8,7 @@
 
 import UIKit
 
-private class CircleIndicator: UIView {
+class CircleIndicator: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -109,9 +109,6 @@ class PhotosIndicator: UIView {
         let midX = bounds.midX
         let midY = bounds.midY
         
-        if position == 0 {
-            print("")
-        }
         let half = ceil(CGFloat(views.count) / 2)
         let percent = position - floor(position)
         for (i, v) in views.enumerated() {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A81B16271EE1888200C06586 /* SLMPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81B16261EE1888200C06586 /* SLMPager.swift */; };
 		A857A3A81E9FC58F002E1298 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857A3A71E9FC58F002E1298 /* AppDelegate.swift */; };
 		A857A3AA1E9FC58F002E1298 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857A3A91E9FC58F002E1298 /* ViewController.swift */; };
 		A857A3AD1E9FC58F002E1298 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A857A3AB1E9FC58F002E1298 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A81B16261EE1888200C06586 /* SLMPager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLMPager.swift; sourceTree = "<group>"; };
 		A857A3A41E9FC58F002E1298 /* TestPhotosIndicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestPhotosIndicator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A857A3A71E9FC58F002E1298 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A857A3A91E9FC58F002E1298 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				A857A3A71E9FC58F002E1298 /* AppDelegate.swift */,
 				A857A3B91E9FC5A0002E1298 /* PhotosIndicator.swift */,
+				A81B16261EE1888200C06586 /* SLMPager.swift */,
 				A857A3A91E9FC58F002E1298 /* ViewController.swift */,
 				A857A3AB1E9FC58F002E1298 /* Main.storyboard */,
 				A857A3AE1E9FC58F002E1298 /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A857A3AA1E9FC58F002E1298 /* ViewController.swift in Sources */,
+				A81B16271EE1888200C06586 /* SLMPager.swift in Sources */,
 				A857A3A81E9FC58F002E1298 /* AppDelegate.swift in Sources */,
 				A857A3BA1E9FC5A0002E1298 /* PhotosIndicator.swift in Sources */,
 			);
